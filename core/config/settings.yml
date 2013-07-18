@@ -1,0 +1,30 @@
+all:
+  .settings:
+    standard_helpers:       [Partial, Cache, I18N]
+    default_culture:        de
+    charset:                utf-8
+    i18n:                   on
+
+# ***** FB Settings *****
+#  fb:
+    app_id:  163641493666845
+    api_key: 18457e287a7943794eee14f9ab889eb9
+    secret:  96a3ef5d1946b53e4e41e56675b7cabe
+    url: http://apps.facebook.com/fly-to-your-friends/
+    image_url: http://fly-to-your-friends.ch.m10w0311.sui-inter.net/images
+    page_url: http://www.facebook.com/apps/application.php?id=163641493666845
+  
+  server:
+    url: http://fly-to-your-friends.ch.m10w0311.sui-inter.net/
+    image_url: http://fly-to-your-friends.ch.m10w0311.sui-inter.net/images
+  
+  pager:
+    max_items: 10
+
+# ***** Entwicklung *****
+  development:
+    enviroment: server
+    
+  upload:
+    directory: http://fly-to-your-friends.ch.m10w0311.sui-inter.net/uploads/locationPics
+    page: http://fly-to-your-friends.ch.m10w0311.sui-inter.net/uploads/

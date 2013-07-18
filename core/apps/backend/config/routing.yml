@@ -1,0 +1,43 @@
+pictures:
+  class: sfPropel15RouteCollection
+  options:
+    model:                Pictures
+    module:               pictures
+    prefix_path:          /pictures
+    column:               id
+    with_wildcard_routes: true
+
+user:
+  class: sfPropel15RouteCollection
+  options:
+    model:                User
+    module:               test
+    prefix_path:          /test
+    column:               id
+    with_wildcard_routes: true
+
+destination:
+  class: sfPropel15RouteCollection
+  options:
+    model:                Destination
+    module:               admin
+    prefix_path:          /admin
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,410 @@
+
+html {
+    background: url("../images/layout/bknd_home.jpg") repeat scroll 0 0 transparent;
+    height: 1080px;
+    width: 760px;
+}
+#content {
+    background: url("../images/layout/info_bknd.png") no-repeat scroll 0 42px transparent;
+    height: 465px;
+    left: 130px;
+    position: absolute;
+    top: 125px;
+    width: 508px;
+}
+
+
+.friendUser #content{
+	height:552px;
+}
+.contentBox {
+    height: 432px;
+    margin: 42px 0 0;
+    overflow: hidden;
+}
+.infoTopShadow {
+    background: url("../images/layout/info_top-shadow.png") no-repeat scroll center top transparent;
+    display: block;
+    height: 12px;
+    position: absolute;
+    width: 508px;
+    z-index: 20;
+}
+.shadow {
+    background: url("../images/layout/info_shadow-buttons.png") no-repeat scroll center bottom transparent;
+    display: block;
+    height: 11px;
+    position: fixed;
+    top: 580px;
+    width: 508px;
+}
+.info_bottom {
+    background: url("../images/layout/info_bottom.png") repeat scroll 0 0 transparent;
+    height: 108px;
+    position: absolute;
+    text-align: center;
+    top: 465px;
+    width: 508px;
+}
+.info_bottom.friend {
+    background: url("../images/layout/info_bottom.png") repeat scroll 0 0 transparent;
+    height: 108px;
+    position: absolute;
+    text-align: center;
+    top: 552px;
+    width: 508px;
+    z-index: 400;
+}
+#allofit {
+    height: 1800px;
+    width: 508px;
+}
+.startImage {
+    background: url("../images/layout/info_img-start.png") no-repeat scroll center bottom transparent;
+    display: block;
+    height: 418px;
+    margin-top: 0;
+    width: 508px;
+}
+.flyBox {
+    background: url("../images/layout/info_icon-fly.png") no-repeat scroll 315px 25px transparent;
+    height: 418px;
+    width: 508px;
+    z-index: 1;
+}
+.flyBox p, .winBox p {
+    color: #415359;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 20px 50px 15px;
+    text-shadow: 0 1px 0 #DDDDDD;
+    width: 240px;
+}
+.winBox {
+    background: url("../images/layout/info_icon-win.png") no-repeat scroll 320px 5px transparent;
+    height: 418px;
+    width: 508px;
+    z-index: 2;
+}
+.winBox h3.mainPrices {
+    background: url("../images/layout/txt_main-prizes.png") no-repeat scroll 0 0 transparent;
+    height: 23px;
+    margin: 0 0 0 60px;
+    width: 118px;
+}
+.winBox h3.weeklyPrices {
+    background: url("../images/layout/txt_weekly-prizes.png") no-repeat scroll 0 0 transparent;
+    height: 23px;
+    margin: 0 0 0 60px;
+    width: 180px;
+}
+.winBox ul.pricelist {
+    color: #383838;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 20px;
+    list-style: none outside none;
+    margin: 5px 0 15px 20px;
+    text-shadow: 0 1px 0 #DDDDDD;
+    width: 240px;
+}
+.winBox ul li span {
+    display: block;
+    float: left;
+    font-weight: bold;
+    width: 50px;
+}
+.winBox ul li span.textBlock {
+    display: block;
+    font-weight: normal;
+    margin: 0;
+    width: 160px;
+}
+.headHome {
+    background: url("../images/layout/info_top.png") repeat scroll center top transparent;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    width: 508px;
+}
+#homeHeadline {
+    background: url("../images/layout/info_titles.png") no-repeat scroll 0 0 transparent;
+    color: #383838;
+    display: block;
+    font-size: 18px;
+    height: 15px;
+    margin: 17px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 322px;
+}
+#homeHeadline {
+    background: url("../images/layout/info_titles.png") no-repeat scroll 0 0px transparent;
+}
+.boxes {
+    background: url("../images/layout/info_bknd-txt.png") no-repeat scroll center top transparent;
+    color: #7E7E7E;
+    font-family: Arial;
+    height: 103px;
+    position: absolute;
+    top: 363px;
+    width: 508px;
+}
+.boxLeft {
+    background: url("../images/layout/info_button-left.png") repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 110px;
+    margin: 0 0 0 4px;
+    padding: 0;
+    width: 250px;
+}
+.boxRight {
+    background: url("../images/layout/info_button-right.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 103px;
+    left: 250px;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
+.boxLeft.activeBox {
+    background: url("../images/layout/info_button-left.png") no-repeat scroll 0 -103px transparent;
+}
+.boxRight.activeBox {
+    background: url("../images/layout/info_button-right.png") repeat scroll 0 -103px transparent;
+}
+#startButton {
+    height: 50px;
+    left: 65px;
+    position: absolute;
+    text-align: center;
+    top: 23px;
+    width: 376px;
+    background:url(../images/layout/info_button.gif) no-repeat;
+}
+#startButton .button.start {
+    display: block;
+    height: 50px;
+}
+#startButton .button_right {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 50px;
+    margin: 0 0 0 13px;
+}
+#startButton .button_label.start {
+}
+#readyToFly {
+    /*background: url("../images/layout/info_button-seatbelt.gif") no-repeat scroll center center transparent;*/
+    background: url("../images/layout/info_button-txt.png") no-repeat scroll center 0px transparent;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: 0 auto 0 -13px;
+}
+
+#goToApp {
+    background: url("../images/layout/info_button-txt.png") no-repeat scroll center 0px transparent;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: 0 auto 0 -13px;
+}
+
+#collectFriends {
+    background: url("../images/layout/info_button-txt.png") no-repeat scroll center -50px transparent;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: 0 auto 0 -13px;
+}
+#loadPoints {
+    background: url("../images/layout/info_button-txt.png") no-repeat scroll center -100px transparent;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: 0 auto 0 -13px;
+}
+#loadMap {
+    background: url("../images/layout/info_button-txt.png") no-repeat scroll center 0px transparent;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: 0 auto 0 -13px;
+}
+#toMap {
+    background: url("../images/layout/info_button-txt.png") no-repeat scroll center 0px transparent;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    margin: 0 auto 0 -13px;
+}
+#startButton a {
+    font-family: Arial;
+    text-decoration: none;
+}
+#friendRegistrationInfo {
+	color: #B8B8B8;
+	line-height: 15px;
+	margin:8px;
+}
+.startButtonFriendUser
+{
+    top: 45px !important;
+}
+
+#startResults {
+    display: block;
+}
+#startResults p {
+    color: #383838;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#startResults p.box {
+    color: #787878;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 2px 20px;
+    text-align: left;
+    text-shadow: 0 1px 0 #DDDDDD;
+}
+.label.fly {
+    background-image: url("../images/layout/info_button-fly.png");
+     background-repeat:no-repeat;
+    background-position: 0 -39px;
+    display: block;
+    height: 39px;
+    margin: 20px 0 0 20px;
+    width: 192px;
+}
+.label.win {
+    background-image: url("../images/layout/info_button-win.png");
+    background-repeat:no-repeat;
+    background-position: 0 -39px;
+    display: block;
+    height: 39px;
+    margin: 20px 0 0 20px;
+    width: 166px;
+}
+
+#headlineFlyBox{
+	background: url("../images/layout/info_title-fly_top.png") repeat scroll 0 0 transparent;
+    height: 33px;
+    margin: 50px 0 0 50px;
+    width: 265px;
+}
+
+#headlineWinBox{
+	width:151px;
+	height:33px;
+	background:url(../images/layout/info_title-win_top.png);
+	
+    margin: 50px 0 0 50px;
+}
+
+
+
+#startResults .boxLeft.activeBox p.box, #startResults .boxRight.activeBox p.box {
+    color: #383838;
+}
+.boxLeft.activeBox .label.fly, .boxRight.activeBox .label.win {
+    background-position: 0 0px;
+}
+.friendImage {
+    background: url("../images/layout/info_img-friend.png") repeat scroll 0 0 transparent;
+    height: 252px;
+    margin: 0 4px;
+    position: absolute;
+    top: 46px;
+    width: 500px;
+}
+.friendInviteBox {
+    background: url("../images/layout/info_bknd-txt.png") repeat scroll 0 0 transparent;
+    height: 263px;
+    margin: 0 4px;
+    position: absolute;
+    top: 288px;
+    width: 500px;
+}
+.friendInviteBox .friendInviteText {
+    color: #363636;
+    font-family: Arial;
+    font-size: 13px;
+    height: 165px;
+    line-height: 17px;
+    margin: 30px 20px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.friendInviteBox .buttons.friendInvite {
+    height: 100px;
+    top: 165px;
+}
+.friendInviteText h3 {
+    color: #CC0000;
+    font-size: 24px;
+    width: 250px;
+}
+.friendInvite.messages {
+    background: url("../images/layout/info_message-bknd.png") no-repeat scroll 78px 0 transparent;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    top: 35px;
+    width: 200px;
+}
+.friendInvite.imageCol {
+    float: left;
+    width: 70px;
+    margin-top:-5px;
+}
+.friendInvite.text {
+    margin: -5px  0 0 70px;
+    width: 380px;
+}
+h4 {
+    color: #CC0000;
+    font-size: 18px;
+    margin: 15px 70px;
+}
+.messageCount {
+    margin: 0 25px 0 15px;
+}
+
+.buttons.friendInvite {
+    position: absolute;
+    top: 580px;
+    left: 50px;
+    z-index: 800;
+}
+#friendInviteAccept {
+    background: url("../images/layout/btn_sure.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 50px;
+    position: absolute;
+    width: 186px;
+}
+#friendInviteDeny {
+    background: url("../images/layout/btn_icant.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 50px;
+    position: absolute;
+    left: 225px;
+    width: 186px;
+}
+
+.disclaimer_start{
+	color: #959595;
+    font-family: Arial;
+    font-size: 10px;
+    line-height: 14px;
+    margin: 110px 20px;
+    position: absolute;
+    text-align: center;
+    width: 460px;
+}

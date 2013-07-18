@@ -1,0 +1,134 @@
+connection:                  propel
+defaultIdMethod:             native
+package:                     lib.model
+
+classes:
+  Destination:
+    tableName:               Destination
+    columns:
+      id:                    ~
+      location_id:           { type: integer }
+      location_name:         { type: varchar, size: 256 }
+      region:                { type: varchar, size: 256 }
+      geolocation:           { type: varchar, size: 64 }
+      area:                  { type: varchar, size: 64 }
+      elevation:             { type: varchar, size: 64 }
+      population:            { type: varchar, size: 64 }
+      infotext:              { type: longvarchar }
+      population_density:    { type: varchar, size: 64 }
+      airport_name:          { type: varchar, size: 256 }
+      airport_abbr:          { type: varchar, size: 16 }
+      airport_type:          { type: varchar, size: 128 }
+      timezone:              { type: varchar, size: 64 }
+  Flight:
+    tableName:               Flight
+    columns:
+      id:                    ~
+      User_id:               { type: integer, required: true, foreignTable: User, foreignReference: id }
+      Friend_id:             { type: integer, foreignTable: Friend, foreignReference: id }
+      start_location_id:     { type: integer, required: true, foreignTable: Location, foreignReference: id }
+      target_location_id:    { type: integer, required: true, foreignTable: Location, foreignReference: id }
+      flight_type:           { type: varchar, size: 64, description: freund der angeflogen wird }
+      flight_start:          { type: timestamp }
+      flight_end:            { type: timestamp }
+      flight_duration:       { type: integer, description: in sekunden... kann man dann immer noch umrechnen? }
+      flight_accepted:       { type: varchar, size: 32 }
+      landing_notification:  { type: boolean }
+    indexes:
+      fk_Flight_User1:       [ User_id ]
+      fk_Flight_Friend1:     [ Friend_id ]
+      fk_Flight_Location1:   [ start_location_id ]
+      fk_Flight_Location2:   [ target_location_id ]
+  Friend:
+    tableName:               Friend
+    columns:
+      id:                    ~
+      fb_id:                 { type: varchar, size: 64 }
+      name:                  { type: varchar, size: 64 }
+      is_invited:            { type: boolean }
+      Location_id:           { type: integer, required: true, foreignTable: Location, foreignReference: id }
+    indexes:
+      fk_Friend_Location1:   [ Location_id ]
+  Friendlist:
+    tableName:               Friendlist
+    columns:
+      id:                    ~
+      User_id:               { type: integer, required: true, foreignTable: User, foreignReference: id }
+    indexes:
+      fk_Friendlist_User1:   [ User_id ]
+  Friendrelation:
+    tableName:               Friendrelation
+    columns:
+      id:                    ~
+      Friend_id:             { type: integer, required: true, foreignTable: Friend, foreignReference: id }
+      Friendlist_id:         { type: integer, required: true, foreignTable: Friendlist, foreignReference: id }
+    indexes:
+      fk_FriendRelation_Friend1: [ Friend_id ]
+      fk_FriendRelation_Friendlist1: [ Friendlist_id ]
+  Location:
+    tableName:               Location
+    columns:
+      id:                    ~
+      location_name:         { type: varchar, size: 256 }
+      lat:                   { type: float }
+      lng:                   { type: float }
+      country:               { type: varchar, size: 128 }
+      timezone:              { type: varchar, size: 128 }
+      swiss_destination:     { type: boolean }
+      foreign_destination:   { type: boolean }
+      nearest_destination:   { type: varchar, size: 128 }
+    indexes:
+      location_name:         [ location_name ]
+  Pictures:
+    tableName:               Pictures
+    columns:
+      id:                    ~
+      Destination_id:        { type: integer, required: true, foreignTable: Destination, foreignReference: id }
+      title:                 { type: varchar, size: 128 }
+      path:                  { type: varchar, size: 256 }
+      link:                  { type: varchar, size: 128 }
+      author:                { type: varchar, size: 64 }
+    indexes:
+      fk_Pictures_Destination1: [ Destination_id ]
+  Playerstatus:
+    tableName:               Playerstatus
+    columns:
+      User_id:               { type: integer, required: true, primaryKey: true, foreignTable: User, foreignReference: id }
+      on_flight:             { type: boolean }
+      points:                { type: varchar, size: 32 }
+      bonus:                 { type: integer }
+      flight_points:         { type: integer }
+      available_miles:       { type: integer, description: verfügbare Meilen }
+      flightmiles_total:     { type: integer, description: Flugmeilen, die User insgesamt gesammelt hat }
+      flightmiles_week:      { type: integer, description: Flugmeilen, die User pro Woche gesammelt hat }
+      flight_count:          { type: integer, description: Anzahl der Flüge, die getätigt wurden }
+      homebase_flight:       { type: integer }
+      player_rank:           { type: varchar, size: 128, description: Rangname  }
+      week1:                 { type: integer }
+      week2:                 { type: integer }
+      week3:                 { type: integer }
+      week4:                 { type: integer }
+      week5:                 { type: integer }
+      week6:                 { type: integer }
+      week7:                 { type: integer }
+      week8:                 { type: integer }
+    indexes:
+      fk_PlayerStatus_User:  [ User_id ]
+  User:
+    tableName:               User
+    columns:
+      id:                    ~
+      fb_id:                 { type: varchar, size: 64 }
+      access_token:          { type: varchar, size: 256 }
+      is_fan:                { type: boolean }
+      firstname:             { type: varchar, size: 256 }
+      lastname:              { type: varchar, size: 256 }
+      email:                 { type: varchar, size: 256 }
+      locale:                { type: varchar, size: 64 }
+      created_at:            ~
+      updated_at:            ~
+      inactive_notification: { type: boolean }
+      weekly_notification:   { type: boolean }
+      Location_id:           { type: integer, required: true, foreignTable: Location, foreignReference: id }
+    indexes:
+      fk_User_Location1:     [ Location_id ]

@@ -1,0 +1,25 @@
+.flipDisplay div.flipboard_number{
+    width: 11px;
+    background-image: url('../images/flipboard/numbers_bmp.gif');
+}
+.flipDisplay div.flipboard_letter{
+    width: 12px;
+    background-image: url('../images/flipboard/letters_bmp.gif');
+}
+
+.flipDisplay .marked {
+	float: right;
+    position: absolute;
+    right: 2px;
+    top: 0;
+}
+.flipDisplay .marked div{
+    float:right;
+    display:inline-block;
+    height: 27px;
+    color: white;
+    font-size: 27px;
+    overflow: hidden;
+    background-position: top left;
+    width: 12px;
+}

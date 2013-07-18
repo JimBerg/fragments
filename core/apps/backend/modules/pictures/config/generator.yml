@@ -1,0 +1,23 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Pictures
+    theme:                 admin15
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Pictures
+    plural:                Picturess
+    route_prefix:          pictures
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [Id, Destination, Title, _thumbview, Link, Author]
+      filter:  
+        class: false
+      form:    ~
+      edit:    ~
+      new:     ~

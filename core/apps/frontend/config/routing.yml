@@ -1,0 +1,54 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+
+
+# Home
+home:
+  url:   /home
+  param: { module: home, action: index }
+
+# Terminal
+dashboard:
+  url:   /dashboard
+  param: { module: dashboard, action: index }
+
+# Flight History
+flighthistory:
+  url:   /flighthistory
+  param: { module: flighthistory, action: index }
+
+flighthistory:
+  url:   /flighthistory/:week
+  param: { module: flighthistory, action: index, week: 0 }
+
+
+getflighthistory:
+  url:   /getflighthistory/:week
+  param: { module: flighthistory, action: getFlightHistory, week: 0 }
+
+# Ranking
+ranking:
+  url:   /ranking
+  param: { module: infopages, action: ranking }  
+
+# Gameinfo
+gameinfo:
+  url:   /gameinfo
+  param: { module: infopages, action: gameinfo }  
+
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

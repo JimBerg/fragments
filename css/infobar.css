@@ -1,0 +1,700 @@
+#infobar{
+	background: url("../images/layout/title_bknd.png") repeat scroll center top transparent;
+    height: 57px;
+    position: absolute;
+    top: 182px;
+    width: 760px;
+    z-index: 22;
+}
+h2.headline {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 18px 0 0 30px;
+}
+.transOverlay {
+    background: none repeat scroll 0 0 black;
+    cursor: pointer;
+    height: 387px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 760px;
+    z-index: 12;
+}
+.transOverlay2 {
+    background: none repeat scroll 0 0 black;
+    height: 387px;
+    left: 0;
+    opacity: 0.01;
+    position: absolute;
+    top: 0;
+    width: 760px;
+    z-index: 18;
+}
+#searchbar {
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    top: 18px;
+}
+input#friendSearch {
+    background: url("../images/layout/searchbar.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #C8C8C8;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 10px;
+    text-shadow: 0 1px 0 #383838;
+    width: 100px;
+}
+#searchRight {
+    background: url("../images/layout/search_right.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    width: 21px;
+}
+a:focus {
+    outline: medium none;
+}
+h2.noresult {
+    color: #383838;
+    font-size: 16px;
+    height: 50px;
+    line-height: 54px;
+    margin: 30px auto;
+    text-align: center;
+    width: 700px;
+}
+#friendlist_search {
+}
+#panel {
+    background: url("../images/layout/folder_bknd2.png") no-repeat scroll center bottom transparent;
+    height: 28px;
+    left: 16px;
+    position: absolute;
+    top: -1px;
+    width: 728px;
+    z-index: 23;
+}
+#flightpanel {
+    background: url("../images/layout/folder_bknd_flight.png") no-repeat scroll center bottom transparent;
+    height: 38px;
+    left: 16px;
+    position: absolute;
+    top: -4px;
+    width: 728px;
+    z-index: 21;
+}
+#panelBoarding, #panelLanding {
+    background: url("../images/layout/folder_bknd.png") no-repeat scroll center bottom transparent;
+    display: none;
+    height: 28px;
+    left: 16px;
+    position: absolute;
+    top: -1px;
+    width: 728px;
+    z-index: 21;
+}
+.panelContent {
+    margin-top: 8px;
+}
+#panelBoarding .panelContent, #panelLanding .panelContent {
+    background: url("../images/layout/folder_inlay.png") no-repeat scroll center bottom #EAEAEA;
+    display: none;
+    height: 215px;
+    margin: 0 auto;
+    width: 704px;
+}
+#panelImage, #panelImageLanding {
+    float: left;
+    height: 216px;
+    margin: 0;
+    width: 286px;
+}
+#panelBoarding #panelImage {
+    background: url("../images/layout/image_boarding-01.png") no-repeat scroll 0 -1px transparent;
+}
+#panelBoarding #panelText, #panelLanding #panelText {
+    float: right;
+    height: 212px;
+    padding: 0 15px 0 10px;
+    width: 380px;
+}
+#panelText h3 {
+    color: #CC0000;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+#panelText p {
+    color: #363636;
+    line-height: 17px;
+    margin: 0 0 5px;
+    padding: 0;
+    height:72px;
+}
+#panelFriendList {
+    display: none;
+    margin: 0 0 0 2px;
+    overflow: hidden;
+    width: 720px;
+}
+.noFriendsList {
+    font-size: 24px;
+    margin-top: 50px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+#panelDestination, #panelSelectedFriend, #panelHomebase {
+    display: none;
+    margin: 0 auto;
+    width: 704px;
+}
+#panelSelectedFriend h3 {
+    color: #383838;
+    font-size: 18px;
+    line-height: 16px;
+    margin: 0;
+    padding: 10px 0 8px;
+}
+#panelDestination h3, #panelHomebase h3 {
+    color: #383838;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    padding: 2px;
+}
+#panelDestination h3.abstand_top, #panelHomebase h3.abstand_top {
+    margin: 0;
+    padding-top: 5px;
+}
+#panelDestination h3.abstand_btm, #panelHomebase h3.abstand_btm {
+    margin: 0;
+    padding-bottom: 5px;
+}
+#panelDestination h4, #panelSelectedFriend h4, #panelHomebase h4 {
+    color: #383838;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0 !important;
+    padding: 0;
+	height:18px;
+}
+#panelDestination hr, #panelSelectedFriend hr, #panelHomebase hr {
+    background: url("../images/tooltips/location_tip_line.png") repeat-x scroll center top transparent;
+    border: 0 none;
+    height: 2px;
+    text-align: center;
+    width: 100%;
+	margin:5px 0;
+}
+#panelSelectedFriend.boarding, #panelSelectedFriend.landing {
+    bottom: 35px;
+    clear: both;
+    display: block;
+    position: absolute;
+}
+#panelSelectedFriend.boarding hr, #panelSelectedFriend.landing hr {
+    clear: both;
+}
+.panelButton {
+   /* background: url("../images/layout/button_tongue.png") no-repeat scroll center 0px transparent;*/
+    bottom: 3px;
+    cursor: pointer;
+    height: 28px;
+    left: 324px;
+    position: absolute;
+    width: 80px;
+    z-index: 18;
+}
+.panelButton:hover {
+    /*background: url("../images/layout/button_tongue.png") no-repeat scroll center -28px transparent;*/
+}
+#openFolder {
+    background-image: url("../images/layout/button_tongue-text.png");
+    background-position: 0 -28px;
+    display: block;
+    height: 28px;
+    width: 80px;
+}
+.flightpanelButtons {
+    bottom: 0;
+    cursor: pointer;
+    float: left;
+    height: 38px;
+    left: 220px;
+    position: absolute;
+    width: 320px;
+    z-index: 21;
+}
+.flightpanelButtons.notswiss {
+    bottom: 0;
+    cursor: pointer;
+    float: left;
+    height: 38px;
+    left: 265px;
+    position: absolute;
+    width: 320px;
+    z-index: 21;
+}
+#routeButton {
+    background: url("../images/buttons/button_route.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 38px;
+    width: 100px;
+}
+#routeButton.active {
+    background: url("../images/buttons/button_route.png") no-repeat scroll 0 -38px transparent;
+}
+#weatherButton {
+    background: url("../images/buttons/button_weather.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 38px;
+    margin: 0 10px;
+    width: 100px;
+}
+#weatherButton.active {
+    background: url("../images/buttons/button_weather.png") no-repeat scroll 0 -38px transparent;
+}
+#infoButton {
+    background: url("../images/buttons/button_info.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 38px;
+    width: 100px;
+}
+#infoButton.active {
+    background: url("../images/buttons/button_info.png") no-repeat scroll 0 -38px transparent;
+}
+#friendlist {
+    float: left;
+}
+ul.friendlistPages {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 720px;
+}
+ul.friendlistPages span.loading {
+    background: url("../images/ajax-loader.gif") no-repeat scroll center center transparent;
+    display: block;
+    float: left;
+    height: 50px;
+    margin: 0 4px 8px 5px;
+    width: 50px;
+}
+ul.friendlistPages li {
+    display: block;
+    float: left;
+    height: 50px;
+    margin: 0 4px 8px 5px;
+    padding: 2px;
+    width: 50px;
+}
+.friendlistPages li {
+    cursor: pointer;
+}
+li.friendDisabled {
+}
+ul.friendlistPages li.active_li {
+    border: 2px solid #CC0000;
+    padding: 0;
+}
+.fbPic {
+    display: block;
+    float: left;
+    height: 48px;
+    margin: 10px;
+    width: 48px;
+}
+.fbPicNot {
+    display: block;
+    float: left;
+    height: 48px;
+    margin: 10px;
+    opacity: 0.4;
+    width: 48px;
+}
+#friendlistPager {
+    display: none;
+    height: 26px;
+    margin: 25px auto 0;
+    text-align: center;
+    top: 200px;
+    width: 700px;
+}
+#friendlistPager a {
+    float: left;
+}
+#friendlistPager .pageButton {
+    background: url("../images/layout/folder_pages.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 9px;
+    margin: 0 2px;
+    width: 8px;
+}
+#friendlistPager .pageButton.active {
+    background: url("../images/layout/folder_pages.png") no-repeat scroll 0 -9px transparent;
+}
+#friendlistPager #prevPage {
+    background: url("../images/layout/folder_arrow_left.png") no-repeat scroll 0 -10px transparent;
+    display: block;
+    float: left;
+    height: 10px;
+    margin: 0 10px;
+    width: 10px;
+}
+#friendlistPager #nextPage {
+    background: url("../images/layout/folder_arrow_right.png") no-repeat scroll 0 -10px transparent;
+    display: block;
+    float: right;
+    height: 10px;
+    margin: 0 10px;
+    width: 10px;
+}
+#friendlistPager #nextPage:hover, #friendlistPager #prevPage:hover {
+    background-position: 0 -20px;
+}
+#pages {
+    margin: 0 auto;
+}
+#toolTipFriend {
+    background: url("../images/tooltips/tooltip_white_left.png") no-repeat scroll left top transparent;
+    color: #363636;
+    height: 47px;
+    min-width: 140px;
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+}
+#toolTipFriend.disabled {
+    background: url("../images/tooltips/tooltip_red_left.png") no-repeat scroll left top transparent;
+    color: #EAEAEA;
+    height: 47px;
+    opacity: 0;
+    position: absolute;
+    z-index: 25;
+}
+#toolTipFriend .tT_repeat_section {
+    background: url("../images/tooltips/tooltip_white_right.png") repeat-x scroll right top transparent;
+    font-size: 12px;
+    height: 47px;
+    line-height: 38px;
+    margin: 0 0 0 10px;
+    padding: 0 10px 0 0;
+    text-align: center;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#toolTipFriend.disabled .tT_repeat_section {
+    background: url("../images/tooltips/tooltip_red_right.png") repeat-x scroll right top transparent;
+    font-size: 12px;
+    height: 47px;
+    line-height: 38px;
+    margin: 0 0 0 10px;
+    padding: 0 10px 0 0;
+    text-align: center;
+    text-shadow: 0 1px 1px #666666;
+}
+#toolTipFriend.top_middle, #toolTipFriend.disabled.top_middle {
+    margin: -36px 0 0 -35px;
+}
+#toolTipFriend.top_left, #toolTipFriend.disabled.top_left {
+    margin: -36px 0 0 -75px;
+}
+#toolTipFriend.top_right, #toolTipFriend.disabled.top_right {
+    margin: -36px 0 0;
+}
+#toolTipFriend #arrow {
+    background: url("../images/tooltips/tooltip_white_arrow.png") no-repeat scroll 0 0 transparent;
+    height: 7px;
+    position: relative;
+    top: -2px;
+    width: 7px;
+}
+#toolTipFriend.disabled #arrow {
+    background: url("../images/tooltips/tooltip_red_arrow.png") no-repeat scroll 0 0 transparent;
+}
+.top_right #arrow {
+}
+.top_left #arrow, .top_left.disabled #arrow {
+    margin: 0 0 0 112px;
+}
+.top_middle #arrow, .top_middle.disabled #arrow {
+    margin: 0 0 0 56px;
+}
+#destinationInfo, #selectedFriend {
+    display: none;
+}
+#airportPic {
+    background: url("../images/layout/swiss_logo.gif") no-repeat scroll center center transparent;
+    display: block;
+    float: left;
+    height: 52px;
+    padding: 0 0;
+    width: 52px;
+    margin:4px 0 0 0;
+}
+#homebasePic {
+    background: url("../images/layout/icon_homebase.gif") no-repeat scroll center center transparent;
+    display: block;
+    float: left;
+    height: 52px;
+    margin: 4px 0 0 0;
+    width: 52px;
+}
+.airportInfo {
+    color: #FFFFFF;
+    float: left;
+    margin-top: 8px;
+    padding: 0 10px 0;
+    width: 230px;
+}
+.distanceInfo {
+    color: #FFFFFF;
+    float: left;
+    margin-top: 8px;
+    padding: 0 10px 0;
+    width: 200px;
+}
+h4 .marked.big {
+    float: right;
+    font-size: 26px;
+    margin-top: -8px;
+}
+h4 .marked.small {
+    float: right;
+    font-size: 14px;
+}
+#selectedFriendPic {
+    display: block;
+    float: left;
+    height: 48px;
+    margin: 3px 0;
+    padding: 2px;
+    width: 48px;
+}
+.flightButtons {
+    float: right;
+    margin-top: 23px;
+    width: 150px;
+}
+.friendActive {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 48px;
+    margin: 4px 6px;
+    padding: 0;
+    width: 48px;
+}
+.friendDisabled {
+    background: url("../images/layout/profiles_notavailable.png") no-repeat scroll center center transparent;
+    height: 50px;
+    margin: 2px 7px;
+    opacity: 0.5;
+    padding: 0;
+    width: 50px;
+    z-index: 100;
+    position: absolute;
+
+}
+*+html .friendDisabled {
+   padding-left: 1px;
+   position: relative;
+   margin-top: -60px;
+}
+.button_left {
+    background: url("../images/buttons/button_grey_right.png") no-repeat scroll left 0 transparent;
+    display: block;
+    height: 33px;
+}
+.button_right {
+    background: url("../images/buttons/button_grey_left.png") no-repeat scroll right 0 transparent;
+    display: block;
+    height: 33px;
+    margin: 0 0 0 10px;
+}
+span.buttonLabel {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    line-height: 33px;
+    margin: 0 0 0 -10px;
+    text-align: center;
+    text-shadow: 0 1px 0 #363636;
+    text-transform: uppercase;
+}
+.button_left.grey {
+    background: url("../images/buttons/button_white_right.png") no-repeat scroll left 0 transparent;
+    display: block;
+    height: 33px;
+}
+.button_right.grey {
+    background: url("../images/buttons/button_white_left.png") no-repeat scroll right 0 transparent;
+    display: block;
+    height: 33px;
+    margin: 0 0 0 10px;
+}
+span.buttonLabel.grey {
+    color: #363636;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 9px 0;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: uppercase;
+}
+#notifyFriend {
+    width: 160px;
+    margin:15px 0;
+}
+h5.subheadline {
+    font-size: 12px;
+    margin: 0 0 5px;
+}
+
+#nav{
+	width:230px;
+	margin:0 5px 0 10px;
+}
+
+.flighthistory #nav{
+	width:210px;
+}
+
+#nav li {
+    float: left;
+    list-style: none outside none;
+	background: url("../images/layout/button_weeks_sml.png") repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 22px;
+    list-style: none outside none;
+    width: 24px;
+}
+#nav li a {
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 7px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #383838;
+    z-index: 2;
+}
+a.weeks {
+	background: url("../images/layout/button_weeks_sml.png") repeat scroll 0 0 transparent;
+}
+
+a.weeks#total {
+	background: url("../images/layout/button_weeks_big.png") repeat scroll 0 0 transparent;
+	width:28px;
+}
+
+a.weeks span {
+}
+a.weeks.activeRanking, a.weeks.activeRanking:hover, a#total.weeks.activeRanking, a#total.weeks.activeRanking:hover {
+	background-position:0px -44px;
+}
+a.weeks:hover, a.weeks:hover span, a#total.weeks:hover {
+   /*background: url("../images/layout/weeks_total-left.png") no-repeat scroll 0 0 transparent;*/
+  background-position:0px -22px;
+}
+
+#nav li a.weeks.disabled, 
+#nav li a.weeks.activeRanking.disabled {
+	color: #8F8F8F;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #363636;
+}
+
+h3.abstand_btm .airportName {
+    font-size: 18px;
+}
+#week_total {
+}
+.marked.small {
+    font-size: 18px;
+}
+#rankingSliderContainer {
+    float: left;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.flighthistory #rankingSliderContainer {
+    right: 0px;
+}
+#rankingSliderContainer .rankingLeft {
+}
+#rankingSliderContainer .rankingRight {
+
+}
+#rankingSliderContainerBknd {
+	/*background: url("../images/layout/ranking_bknd.png") no-repeat scroll right 0 transparent;*/
+    float: left;
+    height: 22px;
+    margin-right: 0;
+    position: relative;
+    width: 240px;
+}
+.activeRanking {
+   background-position:0px -44px;
+}
+.landingMessages hr {
+    margin: 0;
+}
+#becomeSwissFan p {
+    /*margin-top: 18px;
+    width: 260px;*/
+      bottom: 118px;
+    margin-top: 18px;
+    position: absolute;
+    right: 28px;
+    width: 280px;
+    height:30px;
+}
+.fanButton {
+    /*margin: -25px 0 0 300px;*/
+    margin:30px 0 0;
+}
+a.ferkel {
+    color: #FFFFFF;
+    font-weight: bold;
+    left: 10px;
+    position: relative;
+    text-shadow: 0 1px 0 #363636;
+    top: 214px;
+}
+.fixLeftCol {
+    float: left;
+}
+.fixRightCol {
+    float: right;
+    padding: 0;
+}
+
+.weekLabel{
+    color: #FFFFFF;
+    position: absolute;
+    right: 266px;
+    text-shadow: 1px 0 1px #363636;
+    top: 23px;
+}

@@ -1,0 +1,337 @@
+/**
+ * SHADOW
+ */
+
+.shadowTop{
+	background: url("../images/layout/shadow_top_map.png") no-repeat scroll 0 0 transparent;
+    height: 11px;
+    left: 10px;
+    position: absolute;
+    top: -1px;
+    width: 740px;
+    z-index: 20;
+}
+
+.shadowTopPanel{
+	background: url("../images/layout/shadow_top_map.png") no-repeat scroll 0 0 transparent;
+    height: 11px;
+    left: 10px;
+    position: absolute;
+    top: -1px;
+    width: 740px;
+    z-index: 22;
+}
+
+#mapCanvas {
+	height: 388px;
+    left: 11px;
+    position: absolute;
+    top: -1px;
+    width: 738px;
+}
+
+/**
+ * Cluster Marker
+ */
+ 
+ .swissDest_reachable.plus{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	z-index:9;
+	background:url(../images/layout_map_icons/cluster_swiss.png);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+.swissDest_notReachable.plus{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	background:url(../images/layout_map_icons/cluster_swiss.png);
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	z-index:9;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+.swissDest_reachable{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	z-index:9;
+	background:url(../images/layout_map_icons/cluster_red.png);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+
+.swissDest_notReachable{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	background:url(../images/layout_map_icons/cluster_red.png);
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	z-index:9;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+.foreignDest_reachable {
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	text-align:center;
+	z-index:9;
+	background:url(../images/layout_map_icons/cluster_grey.png);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+.foreignDest_notReachable{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	text-align:center;
+	z-index:9;
+	background:url(../images/layout_map_icons/cluster_grey.png);
+	cursor:pointer;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	margin: -33px 0 0 -8px;
+}
+
+.homebase_swiss{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	text-align:center;
+	z-index:10;
+	background:url(../images/layout_map_icons/cluster_hb_red.png);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+.homebase_foreign{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	text-align:center;
+	z-index:10;
+	background:url(../images/layout_map_icons/cluster_hb_grey.png);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+
+.current_current{
+	position:absolute;
+	width:26px;
+	height:34px;
+	line-height:28px;
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	text-align:center;
+	z-index:10;
+	background:url(../images/layout_map_icons/cluster_current.png);
+	cursor:pointer;
+	margin: -33px 0 0 -8px;
+}
+
+/**
+ * Tooltips
+*/
+#tooltipCluster{
+	position:absolute; 
+	padding:5px;
+	width:166px;
+	height:50px;
+	z-index:80;
+	opacity:1;
+}
+
+#tooltipCluster p.airportName {
+	color: #363636;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 20px;
+    text-align: center;
+    text-shadow: 0 1px 1px #FFFFFF;
+    /*text-transform: uppercase;*/
+    width: 120px;
+}
+
+#tooltipCluster p.miles {
+	color:#363636;
+	font-size:11px;
+	line-height:16px;
+	/*text-transform:uppercase;*/
+	text-shadow: 0 1px 1px #fff;
+	text-align:center;
+	width:120px;
+	margin:2px 20px 2px 20px;
+}
+
+#tooltipCluster hr{
+	width: 120px;
+	height:2px;
+	line-height: 2px;
+	background:url(../images/tooltips/location_tip_line.png) repeat-x;
+	border:0;
+	margin:-2px 20px 2px 20px;
+	text-align:center;
+}
+
+#tooltipCluster.bottom_left{
+	background:url(../images/tooltips/location_tip_top-right_2.png) no-repeat 0px 0 transparent;
+	margin: -242px 0 0 -175px;
+}
+
+#tooltipCluster.bottom_right{
+	background: url("../images/tooltips/location_tip_top-left_2.png") no-repeat 0px 0 transparent;
+    margin: -242px 0 0 14px;
+}
+
+#tooltipCluster.top_left{
+	background: url("../images/tooltips/location_tip_top-right.png") no-repeat 0 0 transparent;
+    margin: -285px 0 0 -175px;
+}
+
+#tooltipCluster.top_right{
+	background: url("../images/tooltips/location_tip_top-left.png") no-repeat scroll;
+    margin: -285px 0 0 14px;
+}
+
+.tooltipBottom{
+	background: url("../images/tooltips/location_tip_bottom.png") no-repeat scroll left bottom;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 166px;
+}
+
+/**
+* MAP LEGEND
+*/
+.rounded-corners {
+  -moz-border-radius: 10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari, Chrome */
+  border-radius: 10px; /* CSS3 */
+}
+
+#mapLegend2 {
+	position:absolute;
+	width: 91px;
+	height:24px;
+	bottom:120px;
+	right:30px;
+	background:url(../images/layout/legend_bknd.png);
+	z-index:17;
+	margin:0;
+	padding:0;
+	-moz-border-radius: 4px; /* Firefox */
+   -webkit-border-radius: 4px; /* Safari, Chrome */
+    border-radius: 4px; /* CSS3 */
+  	opacity:1;
+	cursor:pointer;
+}
+
+#mapLegend2 ul.legend{
+	display:none;
+	color:#fff;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: uppercase;
+	margin:5px;
+}
+
+#mapLegend2 ul.legend li{
+	height: 17px;
+    padding: 0 17px 1px 0;
+}
+
+#mapLegend2 .label{
+	background: url("../images/layout/legend_text.png") repeat scroll 0 0 transparent;
+    height: 24px;
+    position: absolute;
+    width: 91px;
+    bottom:0;
+    right:0;
+}
+
+#legendHome{
+ 	background: url(../images/layout/legend_icon_home.png) right 5px no-repeat;		
+}
+
+#legendCurrent{
+ 	background: url(../images/layout/legend_icon_current.png) right 5px no-repeat;		
+}
+
+#legendSwiss{
+ 	background: url(../images/layout/legend_icon_red1.png) right 5px no-repeat;		
+}
+
+#legendSwissUnav{
+ 	background: url(../images/layout/legend_icon_red2.png) right 5px no-repeat;	
+}
+
+#legendOther{
+ 	background: url(../images/layout/legend_icon_white1.png) right 5px no-repeat;		
+}
+
+#legendOtherUnav{
+ 	background: url(../images/layout/legend_icon_white2.png) right 5px no-repeat;		
+}
+
+#panToHomebase {
+	position:absolute;
+	width: 28px;
+	height:28px;
+	bottom:120px;
+	left:40px;
+	background:url(../images/layout/walter.png) center center no-repeat;
+	z-index:11;
+	cursor:pointer;
+}
+

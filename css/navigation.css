@@ -1,0 +1,94 @@
+#mainNavigation {
+	position:absolute;
+	width: 760px;
+	left:0px;
+	right:0px;
+	top:136px;
+	z-index:5;
+}
+
+#mainNavigation .leftBorder {
+	position:absolute;
+	width: 21px;
+	height:46px;
+	background:blue;
+	left:2px;	
+	background:url(../images/layout/nav_bknd_left.png) top no-repeat;
+}
+
+#mainNavigation .rightBorder {
+	position:absolute;
+	width: 21px;
+	height:46px;
+	background:red;
+	left:737px;
+	background:url(../images/layout/nav_bknd_right.png) top no-repeat;
+}
+
+#mainNavigation .middle {
+	position:absolute;
+	width: 716px;
+	height:46px;
+	background:url(../images/layout/nav_bknd_mid.png) top repeat-x;
+	left:21px;	
+}
+
+#mainNavigation .middle ul {
+	height: 28px;
+    margin: 12px 0 0;
+}
+
+#mainNavigation ul li {
+	display:inline;
+}
+
+#mainNavigation li{
+}
+
+#mainNavigation a{
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 30px;
+    margin: 0 10px;
+    width: 113px;
+	text-transform:uppercase;
+	color:#333;
+	font-size:12px;
+}
+
+#dashboard_index{
+	background-image:url(../images/layout/nav_button_fly.png);
+}
+	
+#flighthistory_index{
+	background-image:url(../images/layout/nav_button_route.png);
+}	
+
+#infopages_ranking{
+	background-image:url(../images/layout/nav_button_ranking.png);
+}
+
+#infopages_gameinfo{
+	background-image:url(../images/layout/nav_button_gameinfo.png);
+}
+
+#mainNavigation ul li a{
+	background-position: 0px 0px;
+}
+
+#mainNavigation ul li a:hover{
+	background-position: 0px -28px;
+}
+
+#mainNavigation ul li a.active{
+	background-position: 0px -56px;
+}
+
+#mainNavigation ul li a.active:hover{
+	background-position: 0px -84px;
+}
+
+#mainNavigation span{
+	visibility:hidden;
+}

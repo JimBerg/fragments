@@ -1,0 +1,493 @@
+html {
+	height:auto;
+	width:760px;
+	background:url(../images/layout/bknd.jpg) no-repeat;
+}
+
+body {
+	font-family: Arial;
+	font-size:12px;
+	line-height:15px;
+	width:760px;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+*:focus {outline: none;}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+ul,
+ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration:none;
+}
+
+/**
+ * HEADER
+ */
+#header {
+	background: url("../images/layout/logo_plane.png") no-repeat scroll 0 0 transparent;
+    height: 146px;
+    left: 0;
+    position: absolute;
+    width: 760px;
+}
+
+
+#logo {
+    height: 60px;
+    left: 20px;
+    position: absolute;
+    top: 30px;
+    width: 140px;
+	cursor:pointer;
+}
+#loading-gif{
+	position: absolute;
+	top: 402px;
+	left: 280px;
+	z-index: 30;
+	opacity:0.5;
+}
+/**
+ * CONTENT
+ */
+#content {
+ 	position:absolute;
+	width:760px;
+	height:492px;
+	top:240px;
+ }
+
+/**
+* FOOTER
+*/
+#footer {
+ 	position:absolute;
+	width:760px;
+	height:350px;
+	top: 475px;
+ }
+
+#socialMediaBar {
+ 	position:absolute;
+	width:720px;
+	height:80px;
+	left:20px;
+	right:20px;
+	top:20px;
+	bottom:10px;
+ }
+
+#disclaimer {
+ 	position:absolute;
+	width:760px;
+	height:245px;
+	top:125px;
+	background:url(../images/layout/footer_shadow.png) top center no-repeat;
+ 	text-align:center;
+ }
+ 
+.infopages #disclaimer,
+.infopages #socialMediaBar {
+	margin-left:-11px;
+ }
+ 
+
+ #controlsNextFlight, #controlsPrevFlight {
+	cursor:pointer;
+}
+
+.flightTooltip {
+	height: 163px;
+	width: 233px;
+	color: #000;
+	font-size: 14px;
+	text-align: left;
+}
+.flightTooltipLeftBorder {
+	float: left;
+	width: 15px;
+	height: 100%;
+	background: transparent top center no-repeat url('../images/flighthistory/tooltip_left_border.png');
+}
+.flightTooltipRightBorder {
+	float: right;
+	width: 7px;
+	height: 100%;
+	background: transparent top center no-repeat url('../images/flighthistory/tooltip_right_border.png');
+}
+.flightTooltipContent {
+	position:relative;
+	height: 100%;
+	width: 211px;
+	margin-left: 15px;
+	margin-right: 7px;
+	background: transparent top center repeat-x url('../images/flighthistory/tooltip_mid.png');
+}
+.verticalDivider {
+	width: 212px;
+	height: 2px;
+	background: transparent top center repeat-x url('../images/flighthistory/vertical_divider.gif');
+}
+.horizontalDivider {
+	display: inline-block;
+	width: 1px;
+	height: 28px;
+	background: transparent top center repeat-x url('../images/flighthistory/horizontal_divider.gif');
+	vertical-align: middle;
+}
+.airportName, .airportCity
+{
+	color: #363636;
+	font-size: 14px;
+	margin-left: 5px;
+	
+	/*text-shadow: 0 1px 1px #FFFFFF;*/
+	/*text-transform: uppercase;*/
+
+}
+.airportName span{
+	display: inline-block;
+	height:14px;
+	padding-top: 10px;
+}
+.airportCity span{
+	display: inline-block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.flightNumbers {
+	margin-left: 5px;
+}
+.flightNumbers .tooltipLabel, .friends .tooltipLabel {
+	display: inline-block;
+	height: 14px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	width: 48px;
+	display: inline-block;
+	font-size: 14px;
+	float:left;
+}
+.flightNumberContainer
+{
+	display: table-cell;
+}
+.flightNumber {
+	display: inline-block;
+	width: 31px;
+	height: 26px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 26px;
+}
+
+.friends {
+	line-height: 28px;
+	margin-left: 5px;
+}
+.friendContainer {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	height: 28px;
+	width: 31px;
+	padding-top: 4px;
+}
+.friendPic {
+	height: 25px;
+	width: 25px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.friend_flight_status_image {
+	position: absolute;
+	top: 18px;
+	left: 18px;
+}
+
+.destinationInfo {
+	margin-left: 5px;
+	margin-top: 6px;
+	font-size: 11px;
+}
+.swissDestinationImage {
+	float: right;
+}
+.swissDestinationLabel, .homebaseDestinationLabel {
+	vertical-align: bottom;
+	font-size: 11px;
+}
+#disclaimer, #footer{
+	color: #7a7c7d;
+	text-shadow:1px 0 1px #fff;
+}
+#disclaimer p{
+	margin:30px auto 0 auto;
+	color:#8d8f8f;
+    font-size: 11px;
+    width: 640px;
+	text-shadow:1px 0 1px #fff;
+ }
+
+#disclaimer hr{
+ 	background: url("../images/layout/footer_line.png") no-repeat scroll center top transparent;
+    border: 0 none;
+    height: 2px;
+    padding: 0 0 10px;
+    width: 740px;
+ }
+
+ #disclaimer a{
+ 	color: #7a7c7d;
+	text-shadow:1px 0 1px #fff;
+ }
+
+ /**
+  * SOCIAL MEDIA BUTTONS FOOTER
+  */
+ #likeButton{
+ 	width:450px;
+ }
+
+ #becomeFriend{
+    position: absolute;
+    width: 171px;
+    height: 40px;
+    left: 170px;
+    top: 35px;
+    z-index: 5;
+	background: url("../images/layout/fb_becomeafriend.png") repeat scroll 0 0 transparent;
+ }
+
+.twitterButtons{
+    position: absolute;
+    width: 315px;
+    height: 80px;
+    right: 0px;
+	top:0;
+	text-align:right;
+ }
+
+.twitterButtons #followUs,
+.twitterButtons#tweet {
+	height:25px;
+}
+
+.twitterButtons #followUs span,
+.twitterButtons #tweet span{
+	vertical-align:top;
+	line-height:22px;
+	padding-right:10px;
+	color:#8d8f8f;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+.starAlliance{
+	width:140px;
+	height:19px;
+	position:absolute;
+	bottom:-5px;
+	right:0;
+	background:url(../images/layout/logo_staralliance.png) no-repeat;
+	}
+
+/**
+* SHADOW
+*/
+
+.shadowTop{
+	  background: url("../images/layout/shadow_top_map.png") no-repeat scroll 0 0 transparent;
+    height: 11px;
+    left: 10px;
+    position: absolute;
+    top: -1px;
+    width: 740px;
+    z-index: 20;
+}
+
+.shadowLeft{
+	background: url("../images/layout/map_shadow_left.png") repeat-y scroll 0 0 transparent;
+    height: 386px;
+    left: 3px;
+    position: absolute;
+    top: -1px;
+    width: 8px;
+}
+
+.shadowRight{
+	background: url("../images/layout/map_shadow_right.png") repeat-y scroll 0 0 transparent;
+    height: 386px;
+    left: 749px;
+    position: absolute;
+    top: -1px;
+    width: 8px;
+}
+
+/**
+/ Terms & Conditions
+**/
+.termsOverlay{
+	position:absolute;
+	top:0;
+	width:760px;
+	height:1080px;
+	background:black;
+	opacity:0.7;
+	filter:alpha(opacity=570);
+	z-index:400;
+}
+#termsBox, #rulesBox{
+    display: none;
+    z-index: 401;
+    height: 585px;
+    width: 508px; 
+    left: 120px;
+    position: absolute;
+    top: -130px;
+    text-align:left;
+}
+
+#rulesBox ul li{
+	list-style-type:square;
+	margin:0px 15px;
+}
+
+#rulesBox ol, 
+#rulesBox ol li{
+	margin:0px;
+}
+
+#terms, #rules {
+    background: url("../images/layout/shadow_terms.png") repeat-y scroll 0 0;
+  color:#363636;
+  	width:508px;
+}
+
+.termsBox, .rulesBox{
+	height:420px;
+	 width: 504px;
+    overflow: auto;
+    background: url("../images/layout/info_top-shadow.png") no-repeat scroll center top transparent;
+}
+#terms h3, #terms h2, #rules h3, #rules h2{
+    color:#cc0000;
+    line-height:18px;
+}
+
+#terms a, #rules a{
+    color:#cc0000;
+    line-height:18px;
+}
+#termsContent, #rulesContent {
+    padding: 10px 20px;
+    line-height: 16px;
+}
+
+#termsHead, #rulesHead{
+	background: url("../images/layout/info_top.png") repeat scroll 0 0 transparent;
+    height: 42px;
+}
+
+#termsHead h3, #rulesHead h3{
+	background: url("../images/layout/terms_title.png") no-repeat scroll 0 center transparent;
+    display: block;
+    height: 48px;
+    line-height: 70px;
+    margin: 0 auto;
+    width: 189px;
+}
+#rulesHead h3{
+	background: url("../images/layout/info_title-game.png") no-repeat scroll 0 center transparent;
+}
+
+
+#termsFoot, #rulesFoot{
+	background: url("../images/layout/terms_bottom.png") repeat scroll 0 0 transparent;
+    height: 48px;
+}
+
+#termsClose, #rulesClose{
+	 background: url("../images/layout/terms_close-button.png") repeat scroll 0 -20px transparent;
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 20px;
+}
+
+
+#termsClose:hover, #rulesClose:hover{
+	 background-position: 0 -40px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+

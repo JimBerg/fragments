@@ -1,0 +1,464 @@
+
+.contentBox {
+	background: url(../images/layout/folder_inlay.png) center -70px no-repeat #eaeaea;
+    height: 395px;
+    left: 11px;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    width: 738px;
+}
+
+table {
+	border-collapse: seperate;
+    left: 18px;
+    position: absolute;
+    top: 60px;
+    width: 702px;
+    border-spacing:0;
+}
+
+th, tr, td{
+ 	padding:0px 10px;
+ 	height: 23px;
+ 	line-height:23px;
+ 	color: #363636;
+ 	text-shadow: 1px 1px 0 #fff;
+ 	font-size:12px;
+ 	/*border-right: 1px dotted #aaa;*/
+ 	 border-width:0px 1px 0 0;
+      -moz-border-image:url(../images/layout/ranking_row.png) 0 1 0 0 repeat;
+      -webkit-border-image:url(../images/layout/ranking_row.png) 0 1 0 0 repeat;
+      border-image:url(../images/layout/ranking_row.png) 0 1 0 0 repeat;
+}
+
+th{
+	height:40px;
+	line-height:18px;
+}
+
+td.last, th.last{
+	border:0;
+	text-align:right;
+}
+
+th.points{
+	width:95px;
+}
+
+th.visited,
+td.visited{
+	text-align:right;
+	width:105px;
+}
+
+th.homebase,
+td.homebase{
+	width:290px;
+}
+
+th.passenger,
+td.passenger{
+	width:175px;
+}
+
+
+.ranking_even{
+}
+
+.ranking_odd{
+	background:url(../images/layout/ranking_column.png) repeat-x;
+}
+
+.ranking_marked{
+	/*background:#cc0000;*/
+	background:#363636;
+}
+
+.ranking_marked td{
+	/*color: #DDDDDD;
+    text-shadow: 0 1px 0 #333333;*/
+    color: #fff;
+    text-shadow: 0 1px 0 #333333;
+}
+
+#rankingPager {
+	display: inline;
+    left: 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: 356px;
+    width: 660px;
+}
+
+
+h2.headline.ranking{
+	color: #CC0000;
+    font-size: 24px;
+    margin: 25px 0 0 28px;
+    text-align: left;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#rankingPager a,
+#infoPager a{
+	background: url("../images/buttons/button_pages.png") no-repeat scroll 0 0px transparent;
+    display: block;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 2px;
+    width: 27px;
+    color:#363636;
+    text-decoration:none;
+}
+
+#rankingPager a:hover,
+#infoPager a:hover{
+	background: url("../images/buttons/button_pages.png") no-repeat scroll 0 -22px transparent;
+}
+
+#rankingPager a.active,
+#infoPager a.activeInfo{
+	background: url("../images/buttons/button_pages.png") no-repeat scroll 0 -44px transparent;
+}
+
+#rankingPager a.active:hover,
+#infoPager a.activeInfo:hover{
+	background: url("../images/buttons/button_pages.png") no-repeat scroll 0 -66px transparent;
+}
+
+#rankingPager a.firstPage{
+	width:21px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_right-fr.png") no-repeat scroll 0 -10px transparent;
+	display:block;
+}
+
+#rankingPager a.lastPage{
+	width:21px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_right-ff.png") no-repeat scroll 0 -10px transparent;
+	display:block;
+}
+
+#rankingPager a.prevPage{
+	width:10px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_left.png") no-repeat scroll 0 -10px transparent;
+	display:block;
+}
+
+#rankingPager a.nextPage{
+	width:10px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_right.png") no-repeat scroll 0 -10px transparent;
+	display:block;
+}
+
+#rankingPager span.nextPage{
+	width:10px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_right.png") no-repeat scroll 0 0px transparent;
+	display:block;
+}
+
+#rankingPager span.firstPage{
+	width:21px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_right-fr.png") no-repeat scroll 0 0px transparent;
+	display:block;
+}
+
+#rankingPager span.lastPage{
+	width:21px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_right-ff.png") no-repeat scroll 0 0px transparent;
+	display:block;
+}
+
+#rankingPager span.prevPage{
+	width:10px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_left.png") no-repeat scroll 0 0px transparent;
+	display:block;
+}
+
+
+
+#rankingPager a.firstPage:hover,
+#rankingPager a.lastPage:hover,
+#rankingPager a.prevPage:hover,
+#rankingPager a.nextPage:hover{
+	background-position: 0px -20px;
+}
+
+.firstPage{
+	position:absolute;
+	left:0;
+	top:5px;
+}
+
+.prevPage{
+	position:absolute;
+	left:40px;
+	top:5px;
+}
+
+.lastPage{
+	position:absolute;
+	right:0;
+	top:5px;
+}
+
+.nextPage{
+	position:absolute;
+	right:40px;
+	top:5px;
+}
+
+.pages{
+	margin: 0 auto;
+}
+
+
+/**
+ * Gameinfo
+ */
+.gameinfo #container{
+    height: 345px;
+    margin: 0 17px;
+    overflow: hidden;
+    width: 702px;
+    background: url("../images/layout/gameinfo_bknd.jpg") repeat scroll 0 0 transparent;
+}
+
+.gameinfo #slider{
+	width:6500px;
+	height:200px;
+}
+
+.gameinfo .slide {
+    background-position: center center;
+    display: block;
+    float: left;
+    height: 346px;
+    padding: 0;
+    text-align: left;
+    width: 702px;
+}
+
+.gameinfo #slide1{
+	background:url(../images/layout/gameinfo_1.png);
+}
+.gameinfo #slide2{
+	background:url(../images/layout/gameinfo_2.png);
+}
+.gameinfo #slide3{
+	background:url(../images/layout/gameinfo_3.png);
+}
+.gameinfo #slide4{
+	background:url(../images/layout/gameinfo_4.png);
+}
+.gameinfo #slide5{
+	background:url(../images/layout/gameinfo_5.png);
+}
+.gameinfo #slide6{
+	background:url(../images/layout/gameinfo_6.png);
+}
+.gameinfo #slide7{
+	background:url(../images/layout/gameinfo_7.png);
+}
+.gameinfo #slide8{
+	background:url(../images/layout/gameinfo_8.png);
+}
+.gameinfo #slide9{
+	background:url(../images/layout/gameinfo_9.png);
+}
+
+#infoPager{
+	margin: 12px auto;
+	width:700px;
+} 
+
+#infoPager .numbers{
+	margin: 0 auto;
+	width:280px;
+} 
+
+.gameinfo a#prev{
+	display:block;
+	visibility:hidden;
+}
+
+.gameinfo a#next{
+	display:block;
+	visibility:hidden;
+}
+
+.gameinfo a#prev.visible{
+	width:10px;
+	height:10px;
+	background: url("../images/layout/folder_arrow_left.png") no-repeat scroll 0 -10px transparent;
+	display:block;
+	margin: 6px 0 0;
+    position: absolute;
+    left: 35px;
+    visibility: visible;
+}
+
+.gameinfo a#next.visible {
+    background: url("../images/layout/folder_arrow_right.png") no-repeat scroll 0 -10px transparent;
+    display: block;
+    height: 10px;
+    margin: 6px 0 0;
+    position: absolute;
+    right: 35px;
+    visibility: visible;
+    width: 10px;
+}
+
+.gameinfo a#next.visible:hover,
+.gameinfo a#prev.visible:hover{
+	background-position: 0px -20px;
+}
+
+
+/*.gameinfo .slide p {
+    width: 402px;
+	color:#415359;
+	font-size:13px;
+	float:left;
+    text-shadow:  0 1px 1px #fff;
+}
+.gameinfo .slide .red {
+    color: #cc0000;
+    text-shadow:  0 1px 1px #fff;
+}
+
+.gameinfo #slide1 h2{
+	display:block;
+	width:247px;
+	height:22px;
+	background:url(../images/layout/label_start_travel.png) top center no-repeat;
+}
+
+.gameinfo #slide1 .image{
+    background: url("../images/layout/gameinfo_img1.png") no-repeat scroll center top transparent;
+    display: block;
+    float: right;
+    height: 361px;
+    position: relative;
+    right: 5px;
+    top: -88px;
+    width: 227px;
+}
+
+.gameinfo ul li{
+	color:#415359;
+	font-size:13px;
+	line-height: 18px;
+    text-shadow:  0 1px 1px #fff;
+}
+
+.gameinfo #slide2 ul.left{
+	left: 20px;
+    position: relative;
+    top: 0px;
+    width: 200px;
+}
+
+.gameinfo #slide2 ul.right{
+	left: 445px;
+    position: relative;
+    top: -420px;
+    width: 200px;
+}
+
+.gameinfo #slide2 .image{
+	 background: url("../images/layout/info_icon-fly.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 200px;
+    left: 240px;
+    position: relative;
+    top: -200px;
+    width: 167px;
+}
+
+.gameinfo li#first{
+	background: url("../images/layout/li_1.png") no-repeat scroll 0 30px transparent;
+    padding: 0 0 0 40px;
+}
+
+.gameinfo li#second {
+    background: url("../images/layout/li_2.png") no-repeat scroll 0 4px transparent;
+    margin: 15px 0 0;
+    padding: 0 0 0 40px;
+}
+
+.gameinfo li#third{
+	background: url("../images/layout/li_3.png") no-repeat scroll 0 3px transparent;
+    padding: 0 0 0 40px;
+}
+
+.gameinfo li#fourth{
+	background: url("../images/layout/li_4.png") no-repeat scroll 0 3px transparent;
+    margin: 15px 0 0;
+    padding: 0 0 0 40px;
+}
+
+.gameinfo #slide2 .red{
+	color: #CC0000;
+    display: block;
+    left: 60px;
+    position: relative;
+    text-shadow: 0 1px 1px #FFFFFF;
+    top: -370px;
+}
+
+
+.gameinfo #slide3 .image {
+    background: url("../images/layout/info_icon-win.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 418px;
+    left: 480px;
+    position: relative;
+    top: -630px;
+    width: 200px;
+}
+
+.gameinfo #slide3 .text{
+    display: block;
+    height: 418px;
+    left: 270px;
+    line-height: 18px;
+    position: relative;
+    top: -210px;
+    width: 165px;
+	color:#415359;
+	font-size:13px;
+    text-shadow:  0 1px 1px #fff;
+}
+
+.gameinfo h3.mainPrices {
+    background: url("../images/layout/txt_main-prizes.png") no-repeat scroll 0 0 transparent;
+    height: 23px;
+    margin: 40px 0 0 20px;
+    width: 118px;
+}
+.gameinfo h3.weeklyPrices {
+    background: url("../images/layout/txt_weekly-prizes.png") no-repeat scroll 0 0 transparent;
+    height: 23px;
+    margin: 30px 0 0 20px;
+    width: 180px;
+}
+.gameinfo ul.pricelist {
+    color: #383838;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 20px;
+    list-style: none outside none;
+    margin: 5px 0 15px 20px;
+    text-shadow: 0 1px 0 #DDDDDD;
+    width: 210px;
+}*/
+

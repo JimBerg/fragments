@@ -1,0 +1,578 @@
+
+#onFlightMap {
+	height: 386px;
+    left: 11px;
+    position: absolute;
+    top: -1px;
+    width: 738px;
+}
+
+
+#pathOverlay {
+	 color: white;
+    font-size: 10px;
+    height: 386px;
+    left: 10px;
+    margin: -2px 0 0 0;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    width: 740px;
+    z-index: 10;
+}
+
+
+/**
+ * Tooltips
+*/
+#tooltipCluster{
+	position:absolute; 
+	padding:5px;
+	width:166px;
+	height:50px;
+	z-index:80;
+	opacity:1;
+}
+
+#tooltipReaction {
+	position:absolute; 
+	padding:5px;
+	width:166px;
+	z-index:80;
+	opacity:1;
+}
+
+#tooltipCluster p.airportName {
+	color: #363636;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 20px;
+    text-align: center;
+    text-shadow: 0 1px 1px #FFFFFF;
+    width: 120px;
+}
+
+#tooltipReaction p.head{
+	color:#363636;
+	font-size:11px;
+	line-height:14px;
+	text-shadow: 0 1px 1px #fff;
+	text-align:left;
+	width:120px;
+	margin:2px 20px;
+}
+
+#tooltipReaction p.text{
+	color:#363636;
+	font-size:11px;
+	line-height:14px;
+	text-shadow: 0 1px 1px #fff;
+	text-align:left;
+	width:120px;
+	margin:2px 20px;
+}
+
+#tooltipReaction hr{
+	width: 120px;
+	height:2px;
+	background:url(../images/tooltips/location_tip_line.png) repeat-x;
+	border:0;
+	margin:4px 20px;
+	text-align:center;
+}
+
+#tooltipCluster p.miles {
+	color:#363636;
+	font-size:11px;
+	line-height:16px;
+	/*text-transform:uppercase;*/
+	text-shadow: 0 1px 1px #fff;
+	text-align:center;
+	width:120px;
+	margin:2px 20px;
+}
+
+#tooltipCluster hr{
+	width: 120px;
+	height:2px;
+	background:url(../images/tooltips/location_tip_line.png) repeat-x;
+	border:0;
+	margin:-2px 20px 2px 20px;
+	text-align:center;
+}
+
+#tooltipCluster.bottom_left{
+	background:url(../images/tooltips/location_tip_top-right_2.png) no-repeat 0px 0 transparent;
+	margin: 0px 0 0 -175px;
+}
+
+#tooltipCluster.bottom_right,
+#tooltipReaction.bottom_right{
+	background: url("../images/tooltips/location_tip_top-left_2.png") no-repeat 0px 0 transparent;
+    margin: 0px 0 0 14px;
+}
+
+#tooltipCluster.top_left{
+	background: url("../images/tooltips/location_tip_top-right.png") no-repeat 0 0 transparent;
+    margin: 0px 0 0 -175px;
+}
+
+#tooltipCluster.top_right{
+	background: url("../images/tooltips/location_tip_top-left.png") no-repeat scroll;
+    margin: 0px 0 0 14px;
+}
+
+#tooltipCluster .tooltipBottom{
+	background: url("../images/tooltips/location_tip_bottom.png") no-repeat scroll left bottom;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 57px;
+    width: 166px;
+}
+
+#tooltipReaction .tooltipBottom{
+	background: url("../images/tooltips/location_tip_bottom.png") no-repeat scroll left bottom;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 166px;
+}
+
+#tooltipReaction.bottom_left{
+	background:url(../images/tooltips/location_tip_bottom-right_2.png) no-repeat 0px 0 transparent;
+	margin: -110x 0 0 -165px;
+}
+
+#tooltipReaction.bottom_right{
+	background: url("../images/tooltips/location_tip_bottom-left_2.png") no-repeat scroll;
+    margin: -110px 0 0 52px;
+}
+
+
+#tooltipReaction.top_left{
+	background:url(../images/tooltips/location_tip_top-right_2.png) no-repeat 0px 0 transparent;
+	margin: -52px 0 0 -165px;
+}
+
+
+#tooltipReaction.top_right{
+	background: url("../images/tooltips/location_tip_top-left_2.png") no-repeat scroll;
+    margin: -52px 0 0 52px;
+}
+
+
+.statusIcon{
+	width:21px;
+	height:21px;
+	position:absolute;
+    right: 25px;
+    top: 5px;
+    z-index: 20;
+}
+/**
+* Weather
+*/
+
+#weatherPanel,
+#infoPanel{
+	margin: 8px auto 0 auto;
+    width: 704px;	
+    display:none;
+}
+
+#weatherPanel hr{
+margin:0px 0 10px 0;
+}
+
+.weather.start{
+	margin:5px 0 0 0;
+	width:330px;
+	float:left;
+	padding: 0 18px 0 3px;
+	border-width:0px 1px 0 0;
+      -moz-border-image:url(../images/layout/ranking_row.png) 0 1 0 0 repeat;
+      -webkit-border-image:url(../images/layout/ranking_row.png) 0 1 0 0 repeat;
+      border-image:url(../images/layout/ranking_row.png) 0 1 0 0 repeat;
+}
+
+
+/*.weather.start .left{
+	width:340px;
+	float:left;
+}
+
+.weather.start .right{
+	width:340px;
+	float:right;
+}*/
+
+.weather.target{
+	margin:5px 0 0 0;
+	width:330px;
+	float:right;
+	padding: 0 5px 0 10px;
+}
+
+#weatherIcon{
+	width:135px;
+	height:60px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	float:right;
+}
+
+#weatherTemperature{
+}
+
+#weatherConditions{
+}
+
+#weatherHumidity{
+}
+
+.weather .right{
+	width:195px;
+	float:left;
+}
+
+#weatherPanel h4
+{
+	/*
+	margin:8px 5px;
+	line-height:22px;
+*/
+	margin: 0px 0px;
+	padding: 0px 0px;
+	text-transform:none;
+	font-size:13px;
+	color:#383838;
+}
+
+#infoPanel h4{
+/* 	margin:8px 5px 7px 0; */
+	margin: 0px 0px;
+	padding: 0px 0px;
+	text-transform:none;
+	font-size:13px;
+	color:#383838;
+}
+
+#infoPanel h4 .marked.big.destHeadline{
+	margin:0 0 5px 0;
+	text-align:left;
+	display:block;
+	height:25px;
+	left:0px;
+}
+
+h4 .marked.big{
+	font-size:22px;
+	float:right;
+	text-align:right;
+	text-transform:none;
+	padding:4px 0;
+	color:#383838;
+}
+
+h4 .marked.big.destHeadline{
+	font-size:22px;
+	text-transform:none;
+	padding:4px 0;
+	color:#383838;
+	float:left;
+	 margin-bottom: 15px;
+	 height:30px;
+}
+
+h4.destHeadline{
+	float:left;
+}
+
+h4 .marked.small{
+	font-size:15px;
+	float:right;
+	text-align:right;
+}
+
+
+hr{
+	width: 100%;
+	height:2px;
+	background:url(../images/tooltips/location_tip_line.png) repeat-x;
+	border:0;
+	text-align:center;
+}
+
+.touristInfo.left{
+	width:350px;
+	padding: 0 15px 0 0;
+	position:absolute;
+}
+
+.touristInfo.right{
+	left: 370px;
+    position: absolute;
+    width: 115px;
+}
+
+.touristInfo.pictures{
+    background: none repeat scroll 0 0 #363636;
+    height: 235px;
+    left: 500px;
+
+    position: absolute;
+   
+    z-index: 20;
+    -moz-border-radius:0 0 0 4px;
+	-border-radius:0 0 0 4px;
+	-webkit-border-radius:0 0 0 4px;
+	overflow:hidden;
+    /*padding: 4px;
+     width: 575px;
+	-moz-border-radius:4px;
+	-border-radius:4px;
+	-webkit-border-radius:4px;*/
+}
+
+.destPic{
+	height: 235px;
+	width:575px;
+	display:block;
+	float:left;
+}
+
+#infoText{
+	height: 200px;
+    /*left: 180px;*/
+    margin-left:500px;
+    position: absolute;
+    width: 305px;
+    z-index: 18;
+    top:32px;
+    /*display:none;*/
+}
+
+#infoText p{
+	padding:0px 0px;
+}
+
+
+.infoPanelContent{
+	width:600px;
+	height:240px;
+	position:absolute;
+	left:0;
+	top:30px;
+}
+
+.visibleArea{
+	height: 233px;
+    margin: -8px 0 0;
+    overflow: hidden;
+    position: absolute;
+    width: 704px;
+}
+
+#infoPanel h4.subtitle{
+	font-size: 11px;
+    position: absolute;
+    top: 172px;
+}
+
+/**
+ * On Map
+ */
+
+ #friendPicFlight{
+    height: 61px;
+    position: absolute;
+    width: 53px;
+    z-index: 11;
+ }
+ 
+#friendPicFlight.bottom_right{
+	background: url("../images/layout/location_profile2.png") no-repeat scroll 0 0 transparent;
+  	margin: 10px 0 0 -11px;
+}
+
+#friendPicFlight.bottom_left{
+	background: url("../images/layout/location_profile2.png") no-repeat scroll 0 0 transparent;
+  	margin: 10px 0 0 -11px;
+}
+  
+#friendPicFlight.top_right{
+	background: url("../images/layout/location_profile.png") no-repeat scroll 0 0 transparent;
+  	margin: -50px 0 0 -11px;
+}
+  
+#friendPicFlight.top_left{
+	background: url("../images/layout/location_profile.png") no-repeat scroll 0 0 transparent;
+  	margin: -50px 0 0 -11px;
+}
+ 
+#friendPicFlight.bottom_right span.profile,
+#friendPicFlight.bottom_left span.profile{
+ 	display: block;
+    height: 48px;
+    margin: 10px 0 0 3px;
+    width: 48px;
+ }
+ 
+#friendPicFlight.top_right span.profile,
+#friendPicFlight.top_left span.profile{
+ 	display: block;
+    height: 48px;
+    margin: 3px;
+    width: 48px;
+ }
+
+ .shadowTop.flight{
+ 	z-index:22;
+ }
+ 
+#picPager{
+ 	z-index:25;
+ 	position: fixed;
+	background:grey;
+	display:block;
+	width:60px;
+	height:30px;
+ }
+ 
+ .picsPager.prev{
+ 	left:20px;
+ }
+ 
+  .picsPager.next{
+ 	left:60px;
+ }
+ 
+ 
+#infoPicsContent{
+	 margin-left:0;
+}
+ 
+#infoPanel .touristInfo.list.right h4 {
+    padding: 0 10px;
+    background: url(../images/layout/red_arrow.gif) no-repeat 0px 4px;
+    cursor:pointer;
+}
+
+#infoPanel .touristInfo.list.right h4.subtitle {
+    padding: 0;
+    background: none;
+    background: url("../images/layout/red_arrow.gif") no-repeat scroll 0 17px transparent;
+}
+#infoPanel .touristInfo.list.right a{
+    color:#363636;
+}
+
+#infoPanel .touristInfo.list.right a.redArrow{
+    padding: 0 10px;
+    /*background: url(../images/layout/red_arrow.gif) no-repeat 0px 5px;*/
+}
+
+#infoPanel #moreInfo{
+	background:url(../images/layout/info_menubuttons.png) 0 0px no-repeat;
+	cursor:pointer;
+}
+
+#infoPanel #morePictures{
+	background:url(../images/layout/info_menubuttons.png) 0 -30px no-repeat;
+	cursor:pointer;
+}
+
+#infoPanel #bookFlight{
+	background:url(../images/layout/info_menubuttons.png) 0 -60px no-repeat;
+	cursor:pointer;
+}
+
+/*#infoPanel #moreInfo:hover{
+	background:url(../images/layout/info_menubuttons.png) 5px 0px no-repeat;
+	cursor:pointer;
+}
+
+#infoPanel #morePictures:hover{
+	background:url(../images/layout/info_menubuttons.png) 5px -30px no-repeat;
+	cursor:pointer;
+}
+
+#infoPanel #bookFlight:hover{
+	background:url(../images/layout/info_menubuttons.png) 5px -60px no-repeat;
+	cursor:pointer;
+}*/
+
+#infoPanel #noInfo{
+	background:url(../images/layout/info_menubuttons.png) 0px -120px no-repeat;
+}
+
+#infoPanel .touristInfo.list.right h4 .hidden{
+	visibility:hidden;
+}
+
+
+#buttonsContainer{
+	background: url("../images/layout/ecke.png") repeat scroll 0 0 transparent;
+    bottom: 2px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    z-index: 100;
+}
+span#prevBtn a{
+ 	bottom: 14px;
+    display: block;
+    height: 10px;
+    position: absolute;
+    right: 20px;
+    width: 10px;
+    z-index: 101;
+    background: url("../images/layout/folder_arrow_left.png") repeat scroll 0 -10px transparent;
+}
+span#nextBtn a{
+	background: url("../images/layout/folder_arrow_right.png") repeat scroll 0 -10px transparent;
+    bottom: 14px;
+    display: block;
+    height: 10px;
+    position: absolute;
+    right: 5px;
+    width: 10px;
+    z-index: 101;
+}
+
+span#prevBtn a:hover{
+    background: url("../images/layout/folder_arrow_left.png") repeat scroll 0 -20px transparent;
+}
+span#nextBtn a:hover{
+    background: url("../images/layout/folder_arrow_right.png") repeat scroll 0 -20px transparent;
+}
+
+span#prevBtn .first a,
+span#prevBtn .first:hover a{
+    background: url("../images/layout/folder_arrow_left.png") repeat scroll 0 0px transparent;
+}
+span#nextBtn .last a,
+span#nextBtn .last:hover a{
+    background: url("../images/layout/folder_arrow_right.png") repeat scroll 0 0px transparent;
+}
+
+.btnPics{
+	display: block;
+    height: 10px;
+    width:10px;
+}
+
+.touristInfo.list.right h4#noInfo{
+	color:#777;
+	cursor:default;
+}
+
+.borderOverlay{
+	background:url("../images/layout/img_overlay.png") repeat scroll 0 -17px transparent;
+	width:575px;
+	height:233px;
+	position:absolute;
+}

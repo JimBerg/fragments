@@ -1,0 +1,283 @@
+#playerStatusBar{
+	position:absolute;
+	top:379px;
+ 	background: url(../images/layout/statusbar_bknd.png) 2px 0 no-repeat;
+    height: 113px;
+    width: 760px;
+	color:#fff;
+	float:left;
+	text-align: left;
+}
+
+.ranking #playerStatusBar,
+.gameinfo #playerStatusBar{
+	position:absolute;
+	top:380px;
+	left:-11px;
+ 	background: url(../images/layout/statusbar_bknd.png) 2px 0 no-repeat;
+    height: 113px;
+    width: 760px;
+	color:#fff;
+	float:left;
+}
+
+/**
+ * First Section
+ */
+#userInfo{
+	width:285px;
+	padding:15px 20px;
+}
+
+#userInfo h4{
+	color:#fff;
+	text-transform:uppercase;
+	margin:3px 0 0 0;
+	font-size:14px;
+}
+
+#userInfo .fbProfilePic {
+	background: url("../images/layout/statusbar_profile.png") no-repeat scroll 0 0 transparent;
+    height: 57px;
+    margin: 6px 0 0;
+    padding: 1px;
+    width: 56px;
+}
+
+#userInfo .fbProfilePic img{
+	margin:3px;
+}
+
+#currentLocationDiv{
+	left: 85px;
+    position: absolute;
+    top: 38px;
+}
+
+#playerRank{
+	left: 85px;
+    position: absolute;
+    top: 68px;
+}
+
+
+/**
+ * Second Section
+ */
+
+#pointsInfo{
+    left: 312px;
+    padding: 15px 10px;
+    position: absolute;
+    top: 0px;
+    width: 210px;
+}
+
+#pointsInfo h4{
+	color:#fff;
+	text-transform:uppercase;
+	margin:3px 0 0 0;
+	font-size:14px;
+}
+
+#weekPoints{
+	left: 10px;
+    position: absolute;
+    top: 38px;
+}
+
+#totalPoints{
+	left: 10px;
+    position: absolute;
+    top: 68px;
+}
+
+/**
+ * Third Section
+ */
+
+#milesInfo{
+    left: 547px;
+    padding: 15px 10px;
+    position: absolute;
+    top: 0;
+    width: 210px;
+}
+
+#milesInfo h4{
+	color:#fff;
+	text-transform:uppercase;
+	margin:3px 0 0 0;
+	font-size:14px;
+}
+
+#milesAvailable{
+	left: 8px;
+    position: absolute;
+    top: 38px;
+}
+
+
+/**
+ * FlipClock
+ */
+#userInfo .flipDisplay .left,
+#pointsInfo .flipDisplay .left,
+#milesInfo .flipDisplay .left {
+	position:absolute;
+	height:27px;
+	width:5px;	
+	background: url(../images/layout/statusbar_flipbknd_left.png);	
+}
+
+#userInfo .flipDisplay .middle .marked,
+#pointsInfo .flipDisplay .middle .marked,
+#milesInfo .flipDisplay .middle .marked{
+	visibility: hidden;
+}
+
+#userInfo .flipDisplay .middle{
+	position:absolute;
+	height:27px;
+	width:205px;
+	margin-left:5px;
+	background: url(../images/flipboard/letters_bknd.gif) repeat-x;
+}
+
+#pointsInfo .flipDisplay .middle{
+	position:absolute;
+	height:27px;
+	width:200px;
+	margin-left:5px;
+	background: url(../images/flipboard/numbers_bknd.gif) repeat-x;
+}
+
+#milesInfo .flipDisplay .middle{
+	position:absolute;
+	height:27px;
+	width:174px;
+	margin-left:5px;
+	background: url(../images/flipboard/numbers_bknd.gif) repeat-x;
+}
+
+#userInfo .flipDisplay .right{ 
+	position:absolute;
+	height:27px;
+	width:5px;	
+	background: url(../images/layout/statusbar_flipbknd_right.png);	
+	margin-left:210px;
+}
+
+#pointsInfo .flipDisplay .right{ 
+	position:absolute;
+	height:27px;
+	width:5px;	
+	background: url(../images/layout/statusbar_flipbknd_right.png);	
+	margin-left:205px;
+}
+
+#milesInfo .flipDisplay .right{ 
+	position:absolute;
+	height:27px;
+	width:5px;	
+	background: url(../images/layout/statusbar_flipbknd_right.png);	
+	margin-left:179px;
+}
+
+#currentLocationDiv ._unmarked{
+	background: url("../images/layout/letters_yourein.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+#playerRank ._unmarked{
+	 background: url("../images/layout/letters_level.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+#weekPoints ._unmarked{
+	background: url("../images/layout/letters_thisweek.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+#totalPoints ._unmarked{
+	 background: url("../images/layout/letters_total.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+#milesAvailable ._unmarked{
+	 background: url("../images/layout/letters_available.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+#currentLocationDiv .unmarked{
+	background: url("../images/layout/letters_flyingto.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+#playerRank .unmarked{
+	 background: url("../images/layout/letters_flyingfrom.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 70px;
+}
+
+#weekPoints .unmarked{
+	background: url("../images/layout/letters_arriving.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 64px;
+}
+
+#totalPoints .unmarked{
+	 background: url("../images/layout/letters_duration.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+#milesAvailable .unmarked{
+	 background: url("../images/layout/letters_available.gif") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 62px;
+}
+
+
+/**
+ * LED & ICONS
+ */
+#milesInfo .icons{
+    height: 18px;
+    left: 6px;
+    position: absolute;
+    top: 73px;
+    width: 184px;
+}
+
+#planeSymbol{
+	width:18px;
+	height:18px;
+	background:url(../images/layout/statusbar_icon.png) no-repeat;
+}
+
+#led {
+	height: 12px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 26px;
+}
+
+#led.green{
+	background:url(../images/layout/statusbar_led.png) 0px 0px;
+}
+
+#led.yellow{
+	background:url(../images/layout/statusbar_led.png) 0px -12px;
+}
+
+#led.red{
+	background:url(../images/layout/statusbar_led.png) 0px -24px;
+}

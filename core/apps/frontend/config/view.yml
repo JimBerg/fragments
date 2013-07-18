@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+all:
+  javascripts:    [jquery-1.6.1.js, jquery.backgroundPosition.js, fbFunctions.js, cufon-yui.js, CHSans_Regular_400.font.js, CHSans_Light_400.font.js, CHSans_Medium_400.font.js, CHSans_Bold_400.font.js, fontReplace.js, flipboard.js]
+  stylesheets:    [main.css, navigation.css, infobar.css, statusbar.css, flipboard.css]
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [main.css]
+
+  javascripts:    [jquery-1.6.1.js, fbFunctions.js]
+
+  has_layout:     true
+  layout:         layout
